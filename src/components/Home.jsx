@@ -24,7 +24,7 @@ const Home = () => {
     <div className="h-screen w-screen font-[poppins] flex flex-col justify-center items-center bg-[#FCFCFC]">
       <div className="md:w-[60%] h-[50%] flex items-center justify-between px-2">
         <div className="px-2 w-[50%]">
-          <h1 className="font-bold sm:text-3xl md:text-5xl text-left mb-4 leading-none">
+          <h1 className="font-bold sm:text-lg md:text-5xl text-left mb-4 leading-none">
             Front-End React Developer{" "}
             <span className="inline-block animate-waving-hand">👋🏼</span>
           </h1>
