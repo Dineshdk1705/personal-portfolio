@@ -36,17 +36,17 @@ const projectsData = [
 
 const Projects = () => {
   return (
-    <div className="flex flex-col h-screen text-center mx-auto px-10 justify-evenly items-center pt-20">
-      <h1 className="mb-1 text-4xl font-semibold text-[#358BFC]">Projects</h1>
-      <h3 className="text-lg font-semibold">
-        Each project is a unique piece of development 🧩
-      </h3>
-      <div className="w-screen h-screen flex items-center md:flex-sm px-10">
-        <div className="w-screen h-full relative">
-          <div className="flex w-full h-[80%] justify-center items-center">
-            <ProjectCard projectsData={projectsData} />
-          </div>
-        </div>
+    <div className="flex flex-col h-screen text-center mx-auto px-0 md:px-10 justify-evenly items-center pt-10">
+      <div>
+        <h1 className="mb-0 md:mb-2 text-3xl md:text-4xl font-semibold text-[#358BFC]">
+          Projects
+        </h1>
+        <h3 className="text-sm md:text-lg font-semibold">
+          Each project is a unique piece of development 🧩
+        </h3>
+      </div>
+      <div className="">
+        <ProjectCard projectsData={projectsData} />
       </div>
     </div>
   );

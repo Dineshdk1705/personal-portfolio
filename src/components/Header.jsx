@@ -8,7 +8,7 @@ const Header = () => {
     const list = document.querySelector("ul");
     if (toggleMenu === false) {
       seToggleMenu(true);
-      list.classList.add("top-[60px]");
+      list.classList.add("top-[50px]");
       list.classList.add("opacity-100");
     } else {
       seToggleMenu(false);
@@ -18,7 +18,7 @@ const Header = () => {
   };
 
   return (
-    <div className="sticky top-0 font-[poppins] flex justify-between items-center py-5 px-10 bg-white z-10 drop-shadow">
+    <div className="sticky top-0 font-[poppins] flex justify-between items-center p-3 md:py-5 md:px-10 px-10 bg-white z-10 drop-shadow">
       <span className="flex justify-between items-center w-full md:w-auto">
         <a href="#home" className="font-bold text-2xl cursor-pointer">
           dinesh.dev
@@ -30,7 +30,7 @@ const Header = () => {
         </span>
       </span>
 
-      <ul className="md:flex md:items-center gap-4 text-md font-semibold z-[-1] md:z-auto md:static absolute bg-white w-full left-0 md:w-auto py-4 md:py-0 pl-8 md:pl-0 md:opacity-100 opacity-0 top-[-400] transition-all ease-in-out duration-300">
+      <ul className="md:flex md:items-center gap-4 text-md font-semibold z-[-1] md:z-auto md:static fixed bg-white w-full left-0 md:w-auto py-4 md:py-0 pl-8 md:pl-0 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in-out duration-300">
         <li className="mx-4 my-6 md:my-0">
           <a href="#home" className="snap-end" onClick={handleMenuClick}>
             Home

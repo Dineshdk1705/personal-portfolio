@@ -21,18 +21,18 @@ const Home = () => {
     );
   };
   return (
-    <div className="h-screen w-screen font-[poppins] flex flex-col justify-center items-center bg-[#FCFCFC]">
-      <div className="md:w-[60%] h-[50%] flex items-center justify-between px-2">
-        <div className="px-2 w-[50%]">
-          <h1 className="font-bold sm:text-lg md:text-5xl text-left mb-4 leading-none">
+    <div className="h-auto md:h-screen w-screen font-[poppins] flex flex-col justify-center items-center bg-[#FAFAFA] pt-20">
+      <div className="h-full md:w-[60%] flex flex-col md:flex-row items-center justify-around px-2">
+        <div className="px-2 w-full md:w-[50%]">
+          <h1 className="font-bold text-center text-3xl md:text-5xl md:text-left mb-4 leading-none">
             Front-End React Developer{" "}
             <span className="inline-block animate-waving-hand">👋🏼</span>
           </h1>
-          <p className="text-left text-gray-500 text-md mb-1">
+          <p className="text-left text-gray-500 text-md mb-2 text-sm">
             Hi, I'm Dinesh. A passionate front-end developer specialized in
             building exceptional web apps from Chhattisgarh, India.📍
           </p>
-          <div className="text-left">
+          <div className="text-center md:text-left">
             <IconButton onClick={redirectToLinkedIn}>
               <LinkedInIcon />
             </IconButton>
@@ -41,15 +41,13 @@ const Home = () => {
             </IconButton>
           </div>
         </div>
-        <div className="p-5">
-          <img
-            src="/profile-pic.jpeg"
-            alt="profile_image"
-            width="1000"
-            height="1000"
-            className="w-72 h-72 rounded-full mx-auto object-top object-cover"
-          />
-        </div>
+        <img
+          src="/profile-pic.jpeg"
+          alt="profile_image"
+          width="1000"
+          height="1000"
+          className="order-first md:-order-none w-72 h-72 rounded-full mx-auto object-top object-cover px-5 md:p-5"
+        />
       </div>
       <div className="md:w-[60%]">
         <Skills />
